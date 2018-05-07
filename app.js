@@ -1,5 +1,5 @@
 var btn = document.getElementById("btn"),
-btn2 = document.getElementById("btn2"),
+btn2 = document.getElementById("btn-2"),
 maxNum = document.getElementById("maxNum"),
 minNum = document.getElementById("minNum"),
 secondNum = document.getElementById("secondNum"),
@@ -11,6 +11,7 @@ btn.addEventListener('click',function() {
 // ejercicio 1a
     var mayor = 0;
     for(i = 0; i < array.length; i++){
+
         if (array[i] > mayor)
         {
             mayor = array[i];
@@ -21,6 +22,7 @@ btn.addEventListener('click',function() {
 // ejercicio 1b
     var menor = mayor;
     for(i = 0; i < array.length; i++){
+
         if (array[i] < menor)
         {
             menor = array[i];
@@ -31,6 +33,7 @@ btn.addEventListener('click',function() {
 // ejercicio 1c
     var second=0;
     for(i = 0; i < array.length; i++){
+
         if (array[i] > second & array[i] < mayor)
         {
             second = array[i];
@@ -47,15 +50,14 @@ btn2.addEventListener('click',function() {
     
     for(i = 0; i < arreglo.length; i++){
 
-    for(j = 0; j < arreglo[i].length; j++){
-        
-        if (arreglo[i].length > large)
-        {
-            large = arreglo[i].length;
-            var name = arreglo[i];
+        for(j = 0; j < arreglo[i].length; j++){
+            
+            if (arreglo[i].length > large)
+            {
+                large = arreglo[i].length;
+                var name = arreglo[i];
+            }
         }
-    }
-
     }
     nameLarge.value= name;
 });

@@ -1,7 +1,41 @@
 *{
     box-sizing: border-box;
+    
+}
+
+body {
+    background-image: linear-gradient(to top, #92b5ee, #f7f463, #008793);
+    height: 100vh;
+}
+
+.center {
+    text-align: center;
 }
 
 #large {
     text-transform: capitalize;
+}
+
+ol {
+    display: inline-flex;
+    width: 100%;
+}
+
+li {
+    width: 45%;
+    margin: 10px auto;
+}
+
+[id*='btn'] {
+    background: rgb(2, 4, 37);
+    padding: 7px 21px;
+    margin: 20px auto;
+    border-radius: 7px;
+    color: white;
+    font-weight: 900;
+}
+
+.answer {
+  font-weight: 900;
+  font-size: 1.2rem;
 }
