@@ -4,6 +4,7 @@ maxNum = document.getElementById("maxNum"),
 minNum = document.getElementById("minNum"),
 secondNum = document.getElementById("secondNum"),
 nameLarge = document.getElementById("large"),
+ordenAlpha = document.getElementById("orden"),
 array = [45,75,200,256,1,27],
 arreglo = ['erik','leonardo','andres','gerardo','jan','renzo'];
 
@@ -60,4 +61,23 @@ btn2.addEventListener('click',function() {
         }
     }
     nameLarge.value= name;
+
+// ejercicio 2b
+
+    function orden(arreglo){
+
+        for ( var i =0; i < arreglo.length; i++) {
+            var temp = arreglo[i]; 
+             
+            for (var j = i - 1; j >= 0 && arreglo[j] > temp; j--) {
+
+                arreglo[j + 1] = arreglo[j]; 
+            } 
+            arreglo[j + 1] = temp;
+        }
+        return arreglo;
+    }
+
+    ordenAlpha.value= orden(arreglo);
+    //   console.log(orden(['erik', 'leonardo', 'andres', 'gerardo', 'jan', 'renzo']));
 });
